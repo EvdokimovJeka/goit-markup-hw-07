@@ -9,16 +9,30 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-bottom: 50px;
+    padding-bottom: 30px;
+
+    @media  screen and (min-width:1200px) {
+      padding-bottom: 50px;
+      
+    }
   }
   
   .section-team__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
   .section-team__item {
-    width: calc(100% - 90px) / 4;
+    width: 100%;
+    @media  screen and (min-width:768px) {
+      width: calc((100% - 30px) / 2);
+    } 
+
+    @media  screen and (min-width:1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+
   }
   
   .team-box {

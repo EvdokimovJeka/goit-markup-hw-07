@@ -17,8 +17,8 @@
   }
   
   .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 100%;
+    min-height: 609px;
     background-color: var(--primary-bg-color);
     position: absolute;
     top: 50%;
@@ -29,7 +29,19 @@
     transition: transform;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+
+    @media  screen and(min-width:480px) {
+      width: 450px;
+      min-height: 581px;
+      
+
+    @media  screen and(min-width:1200px) {
+      width: 528px;
+      min-height: 581px;
+      
+    }
   }
+}
   
   .modal__close {
     display: flex;
